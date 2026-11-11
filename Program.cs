@@ -27,11 +27,12 @@ namespace ChipSecuritySystem
             
             if (sortedChips.Any())
             {
-                Console.WriteLine("Sorted Chips:");
+                Console.Write("Blue ");
                 foreach (var chip in sortedChips)
                 {
-                    Console.WriteLine(chip);
+                    Console.Write($"[{chip}] ");
                 }
+                Console.WriteLine("Green");
             }
             else
             {
