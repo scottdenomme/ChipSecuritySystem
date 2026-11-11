@@ -38,7 +38,7 @@ namespace ChipSecuritySystem
                 }
             }
 
-            return best?.Select(c => chipList[c]).ToList();
+            return best?.Select(c => chipList[c]).ToList() ?? new List<ColorChip>();
         }
     }
 }
